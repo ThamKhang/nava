@@ -1,0 +1,74 @@
+/* Nava Media Custom Fixes */
+.navbar.navbar-fixed-top { box-shadow: 0 2px 12px rgba(0,0,0,.08); background: #fff; }
+.navbar-brand img.logo-img { height: 35px; margin-top: -6px; margin-right: 8px; display: inline-block; vertical-align: middle; }
+.navbar-brand .brand-text { font-weight: 600; letter-spacing: .3px; vertical-align: middle; }
+.navbar-brand .tagline { display:block; font-size:10px; letter-spacing:1.2px; color:#999; text-transform:uppercase; margin-top:-2px; }
+@media (max-width:767px){ body{padding-top:60px} .navbar-brand .brand-text,.navbar-brand .tagline{display:none} }
+/* Fix client logo alignment on mobile */
+#fh5co-clients .fh5co-client-logo {
+  text-align: center !important;
+}
+
+#fh5co-clients .fh5co-client-logo img {
+  display: inline-block;
+  margin: 0 auto;
+  max-width: 80%;
+}
+
+/* Optional: add spacing for better layout */
+@media (max-width: 767px) {
+  #fh5co-clients .fh5co-client-logo {
+    margin-bottom: 20px;
+  }
+}
+#fh5co-clients .fh5co-client-logo img {
+  height: 60px;
+  width: auto;
+  object-fit: contain;
+}
+/* Footer logo styling */
+.footer-logo {
+  max-width: 150px; /* chỉnh kích thước logo */
+  height: auto;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+/* Layout & rhythm */
+#fh5co-footer { background:#fff; }
+#fh5co-footer .fh5co-footer-widget { margin-bottom: 24px; }
+.footer-sep { border:0; border-top:1px solid rgba(0,0,0,.06); margin: 24px 0 0; }
+
+/* Logo size + retina */
+.footer-logo { max-width: 160px; height:auto; display:block; margin-bottom:12px; }
+
+/* Typo */
+.footer-tagline { font-weight:600; color:#444; margin:6px 0 6px; }
+.footer-blurb { color:#7a7a7a; line-height:1.7; max-width:520px; }
+
+/* Links column */
+.footer-links { list-style:none; padding:0; margin:0; }
+.footer-links li { margin-bottom:8px; }
+.footer-links a { color:#111; text-decoration:none; }
+.footer-links a:hover { color:#f5a623; }
+
+/* Contact column with icons aligned */
+.footer-contact { list-style:none; padding:0; margin:0; }
+.footer-contact li { display:flex; align-items:flex-start; gap:10px; margin-bottom:10px; color:#7a7a7a; }
+.footer-contact i { color:#c7c7c7; line-height:1.4; }
+
+/* Social row: uniform size & color */
+.footer-social { display:flex; gap:14px; margin-top:14px; }
+.footer-social li { list-style:none; }
+.footer-social a { display:inline-flex; width:36px; height:36px; align-items:center; justify-content:center;
+  border-radius:8px; background:#f4f4f4; color:#f5a623; transition:.2s ease; }
+.footer-social a:hover { background:#f5a623; color:#fff; }
+
+/* Tighten column spacing on mobile and center brand block */
+@media (max-width: 991px){
+  .footer-blurb { max-width:100%; }
+}
+@media (max-width: 767px){
+  #fh5co-footer .col-sm-12, #fh5co-footer .col-sm-6 { text-align:left; }
+  .fh5co-footer-logo, .footer-social { text-align:left; }
+  #fh5co-footer .col-md-5 { margin-bottom: 18px; }
+}
