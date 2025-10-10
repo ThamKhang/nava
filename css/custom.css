@@ -72,3 +72,19 @@
   .fh5co-footer-logo, .footer-social { text-align:left; }
   #fh5co-footer .col-md-5 { margin-bottom: 18px; }
 }
+
+/* Fix text wrap in Key Capabilities */
+#fh5co-features .fh5co-feature-text h3 {
+  white-space: nowrap;           /* không xuống dòng */
+  font-size: 18px;
+}
+
+#fh5co-features .fh5co-feature {
+  display: flex;
+  align-items: center;
+  gap: 14px;                     /* khoảng cách icon - chữ */
+}
+
+#fh5co-features .fh5co-feature-text p {
+  margin-bottom: 0;
+}

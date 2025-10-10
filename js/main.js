@@ -43,15 +43,20 @@
 
 		owl.owlCarousel({
 			items: 1,
-		    loop: true,
+		    loop: false,
 		    margin: 0,
-		    responsiveClass: true,
-		    nav: true,
-		    dots: true,
+		    responsiveClass: false,
+		    nav: false,
+		    dots: false,
 		    smartSpeed: 500,
-		    autoplay: true,
+		    autoplay: false,
 			autoplayTimeout: 5000,
-			autoplayHoverPause: true,
+			autoplayHoverPause: false,
+			// quan trọng: tắt kéo
+			touchDrag: false,
+			mouseDrag: false,
+			pullDrag: false,
+			freeDrag: false,
 		    navText: [	
 		      "<i class='icon-arrow-left2 owl-direction'></i>",
 		      "<i class='icon-arrow-right2 owl-direction'></i>"
